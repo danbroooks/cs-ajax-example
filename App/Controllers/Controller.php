@@ -8,7 +8,10 @@ class Controller {
 		$variables = array(
 			"Title" => "Home Page",
 			"Layout" => "homepageView",
+
 			"HomeLinkClass" => "active",
+			"VideoLinkClass" => "",
+			
 			"content" => "Homepage content from file."
 		);
 

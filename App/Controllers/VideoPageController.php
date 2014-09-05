@@ -9,7 +9,10 @@ class VideoPageController extends Controller {
 		$variables = array(
 			"Title" => "Video Page",
 			"Layout" => "videopageView",
+			
+			"HomeLinkClass" => "",
 			"VideoLinkClass" => "active",
+			
 			"content" => "Videopage content from file."
 		);
 
