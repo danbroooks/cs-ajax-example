@@ -10,11 +10,15 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-    <link rel="stylesheet" type="text/css" href="/framework2.0/App/css/styles.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 
     <!-- Java scripts -->
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <script src="/framework2.0/App/js/script.js"></script>
+
+    <!-- <script src="/App/js/script.js"></script> -->
 
     <title>$Title</title>
 
@@ -22,27 +26,11 @@
 
   <body>
 
-    <div>
+    <% include Header %>
 
-      <% include Header %>
-
-    </div>
-
-    <nav>
-
-      <% include Navigation %>
-
-    </nav>
-
-    <div>
+    <div class="view">
 
       <% include $Layout %>
-
-    </div>
-
-    <div>
-
-      <% include Footer %>
 
     </div>
 

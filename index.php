@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $app = require "classes/Bootstrapper.php";
 $app->start();
@@ -6,6 +6,6 @@ $app->start();
 $router = new Router;
 
 $router->rule('/', 'Controller');
-$router->rule('/videos', 'VideoPageController');
+$router->rule('/video', 'VideoPageController');
 
 $router->handle();

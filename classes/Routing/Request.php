@@ -23,4 +23,13 @@ class Request {
 		return strtok($url, "?");
 	}
 
+
+	// method to determine wether or not the request is an ajax request
+	public function isAjax() {
+		return (
+			isset($_REQUEST['ajax']) ||
+			(isset($_SERVER['HTTP_X_REQUESTED_WITH']) && $_SERVER['HTTP_X_REQUESTED_WITH'] == "XMLHttpRequest")
+		);
+	}
+
 }

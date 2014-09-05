@@ -9,11 +9,20 @@ class VideoPageController extends Controller {
 		$variables = array(
 			"Title" => "Video Page",
 			"Layout" => "videopageView",
+			"VideoLinkClass" => "active",
 			"content" => "Videopage content from file."
 		);
-		
+
+
+		// see Controller.php for notes
+
+		if ($req->isAjax()) {
+			$view = new View('videopageView');
+		} else {
+			$view = new View('base');
+		}
+
 		$response->setBody($view->render($variables));
-		
 		return $response;
 	}
 

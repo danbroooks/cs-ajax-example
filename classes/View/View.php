@@ -50,7 +50,7 @@ class View {
 				$include = $view->render($this->variables);
 				$this->renderedTemplate = str_replace($match, $include, $this->renderedTemplate);
 			} else {
-				echo "Template not found!";
+				echo "Template $template not found!";
 				die;
 			}
 
